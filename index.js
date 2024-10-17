@@ -3,7 +3,7 @@
 const ruleta = document.getElementById("krecidlo");
 const kulka = document.getElementById("ball");
 const resultText = document.getElementById("result");
-
+const button = document.getElementById("buttonz");
 
 var result = 0;
 const onRed = [1, 3, 5, 7, 9, 12, 14, 16, 18, 19, 21, 23, 25, 27, 30, 32, 34, 36];
@@ -20,6 +20,7 @@ function krync() {
 function shit() {
 	let kolor;
 
+	button.style.display = "block";
 	if (!result) {
 		ruleta.className = "";
 		kolor = "zielone";
