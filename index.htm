@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body {
+			font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		}
+		
+		.spin {
+			animation: krec 5s ease-out 1;
+		}
+
+		@keyframes krec {
+			from { rotate: 0deg; }
+			to { rotate: 2160deg; }
+		}
+
+	</style>
+</head>
+<body>
+	<button onclick="krync(); this.style.display = 'none';">Kręćnij no ruletą</button> <br><br><br>
+	<img src="ruleta.png" id="krecidlo"> <br>
+	<span id="result"></span>
+
+	<script src="index.js"></script>
+</body>
+</html>
