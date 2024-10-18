@@ -13,10 +13,9 @@ function krync() {
 	result = Math.floor(Math.random() * 37);
 	ruleta.className = "spin";
 	kulka.className = "spinBall";
+	resultText.innerHTML = "";
 
 	setTimeout(shit, 5000);
-
-	resultText.innerHTML = "";
 }
 
 function shit() {
