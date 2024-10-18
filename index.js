@@ -15,12 +15,14 @@ function krync() {
 	kulka.className = "spinBall";
 
 	setTimeout(shit, 5000);
+
+	resultText.innerHTML = "";
 }
 
 function shit() {
 	let kolor;
 
-	button.style.display = "block";
+	button.style.display = "inline-block";
 	if (!result) {
 		ruleta.className = "";
 		kolor = "zielone";
@@ -33,6 +35,8 @@ function shit() {
 		ruleta.className = "getBlack";
 		kolor = "czarne";
 	}
+
+	kulka.className = "";
 
 
 	resultText.innerHTML = `kulka trafiła na ${kolor} ${result}`;	
